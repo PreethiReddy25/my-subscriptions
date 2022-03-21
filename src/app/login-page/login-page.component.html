@@ -1,0 +1,35 @@
+<p class="headertext">Login Page</p>
+
+<div class="wholebody">
+    <fieldset>
+        <legend>Login
+        </legend>
+        <h5>User Name</h5>
+        <!-- <input type="text" value="Enter User Name" pInputText><br> -->
+        <span class="p-float-label">
+            <input id="float-input" type="text" pInputText>
+            <label for="float-input">User Name</label>
+        </span>
+        <!-- <h5>Password</h5>
+<input type="password" value="Enter Password"> -->
+
+        <h5>Password</h5>
+        <p-password></p-password>
+
+        <h5>Remember Me</h5>
+        <div class="p-field-checkbox">
+            <p-checkbox [(ngModel)]="checked"></p-checkbox>
+
+        </div>
+        <!-- <div class="p-field-checkbox">
+            <p-checkbox name="group1" value="New York" inputId="ny"></p-checkbox>
+            <label for="ny">New York</label>
+        </div> -->
+        <div class='button'>
+            <p-button class='button' label="Submit"></p-button>
+            <p-button class='button' label="Cancel"></p-button>
+
+
+        </div>
+    </fieldset>
+</div>
