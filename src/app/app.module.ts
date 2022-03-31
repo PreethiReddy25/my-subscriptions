@@ -8,11 +8,27 @@ import {InputTextModule} from 'primeng/inputtext';
 import {PasswordModule} from 'primeng/password';
 import {ButtonModule} from 'primeng/button';
 import {CheckboxModule} from 'primeng/checkbox';
-
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { HeaderPageComponent } from './header-page/header-page.component';
+import { FooterPageComponent } from './footer-page/footer-page.component';
+import { MenuPageComponent } from './menu-page/menu-page.component';
+import { BodyPageComponent } from './body-page/body-page.component';
+import {SlideMenuModule} from 'primeng/slidemenu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MySubscriptionsComponent } from './my-subscriptions/my-subscriptions.component';
+import { AddSubscriptionsComponent } from './add-subscriptions/add-subscriptions.component';
+import {TableModule} from 'primeng/table';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    LandingPageComponent,
+    HeaderPageComponent,
+    FooterPageComponent,
+    MenuPageComponent,
+    BodyPageComponent,
+    MySubscriptionsComponent,
+    AddSubscriptionsComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +37,10 @@ import {CheckboxModule} from 'primeng/checkbox';
     PasswordModule,
     ButtonModule,
     CheckboxModule,
-    FormsModule
+    FormsModule,
+    SlideMenuModule,
+    BrowserAnimationsModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
