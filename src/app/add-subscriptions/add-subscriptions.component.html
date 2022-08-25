@@ -1,22 +1,30 @@
 
 <span class="p-float-label"><br>
-    <input id="float-input" type="text" pInputText> <br>
+    <input id="float-input" type="text" pInputText [(ngModel)]="newsub.subscripid"> <br>
     <label for="float-input" class="float-input">ID</label><br>
 </span>
 
 <span class="p-float-label"><br>
-    <input id="float-input" type="text" pInputText> <br>
+    <input id="float-input" type="text" pInputText [(ngModel)]="newsub.subscripname"> <br>
     <label for="float-input" class="float-input">Name</label><br>
 </span>
 
 <span class="p-float-label"><br>
-    <input id="float-input" type="text" pInputText> <br>
+    <input id="float-input" type="text" pInputText [(ngModel)]="newsub.subscripfreq"> <br>
     <label for="float-input" class="float-input">Frequency</label><br>
 </span>
 
 <span class="p-float-label"><br>
-    <input id="float-input" type="text" pInputText> <br>
+    <input id="float-input" type="text" pInputText [(ngModel)]="newsub.subscripprice"> <br>
     <label for="float-input" class="float-input">Amount</label><br>
 </span>
 
-<p-button class='button' label="Submit"></p-button>
+<p-toast position="top-center"></p-toast>
+<p-button class='button' label="Submit" (click)="addsubSubmit()" (click)="showSuccess()" class="p-button-success"></p-button><br>
+
+
+<!-- 
+<div class="card">
+    <button type="button" pButton pRipple (click)="showSuccess()" label="Success" class="p-button-success"></button>
+
+    </div> -->

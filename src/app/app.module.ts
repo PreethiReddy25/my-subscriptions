@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MySubscriptionsComponent } from './my-subscriptions/my-subscriptions.component';
 import { AddSubscriptionsComponent } from './add-subscriptions/add-subscriptions.component';
 import {TableModule} from 'primeng/table';
+import {ToastModule} from 'primeng/toast';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,8 @@ import {TableModule} from 'primeng/table';
     FormsModule,
     SlideMenuModule,
     BrowserAnimationsModule,
-    TableModule
+    TableModule,
+    ToastModule
   ],
   providers: [],
   bootstrap: [AppComponent]
