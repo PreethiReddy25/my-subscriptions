@@ -11,6 +11,7 @@ export class LandingPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.selectedMenu = "my_subs";
   }
   
   renderComponent(data: any) {
