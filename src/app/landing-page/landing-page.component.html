@@ -1,0 +1,34 @@
+<!-- <p>landing-page works!</p>
+<div class="header">
+<app-header-page></app-header-page>
+</div>
+<div class="menu">
+<app-menu-page (onMenuSelected)="renderComponent($event)"></app-menu-page>
+</div>
+<div class="footer">
+<app-footer-page></app-footer-page>
+</div>
+<app-my-subscriptions *ngIf="selectedMenu === 'my_subs'"></app-my-subscriptions>
+<app-add-subscriptions *ngIf="selectedMenu === 'add_subs'"></app-add-subscriptions> -->
+
+<section class="layout">
+    <div class="header">
+        <div class="header1">
+            <app-header-page></app-header-page>
+        </div>
+    </div>
+    <div class="leftSide">
+        <div class="menu">
+            <app-menu-page (onMenuSelected)="renderComponent($event)"></app-menu-page>
+        </div>
+    </div>
+    <div class="body">
+        <app-my-subscriptions *ngIf="selectedMenu === 'my_subs'"></app-my-subscriptions>
+        <app-add-subscriptions *ngIf="selectedMenu === 'add_subs'"></app-add-subscriptions>
+    </div>
+    <div class="footer">
+        <div class="footer">
+            <app-footer-page></app-footer-page>
+        </div>
+    </div>
+</section>

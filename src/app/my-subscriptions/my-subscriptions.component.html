@@ -1,0 +1,20 @@
+<div class="mysubbody">
+<p-table [value]="products">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Frequency</th>
+            <th>Amount</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product>
+        <tr>
+            <td>{{product.subscripid}}</td>
+            <td>{{product.subscripname}}</td>
+            <td>{{product.subscripfreq}}</td>
+            <td>{{product.subscripprice}}</td>
+        </tr>
+    </ng-template>
+</p-table>
+</div>
